@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Services Web Portal</title>
+        <link rel="stylesheet" href="event.css">
+    </head>
+
+    <body>
+    <header>
+        <div class="dash">
+            <img id="logo" src="/images/somiayaimg2.svg">
+            <div class="text">
+                <h1 class title="Hello somaiya wala">KJ SOMAIYA COLLEGE OF ENGINEERING </h1>
+                <h3>ACADEMIC YEAR 2025-26</h3>
+            </div>
+            <img id="trust" src="/images/somaiyatrustimg.svg" width="130px" height="60px">
+            <a href="/event-registrationpage/register.html"><img src="/images/registrtaion.png" width="40px"></a>
+            <a href="/helpneeded/help.html"><img src="/images/helpicon.png" width="40px"></a>
+        </div>
+        <div class="dashboard">
+            <ul>
+ <li><a href="/homepage/index.html">Home</a></li>
+                <li><a href="/eventpage/event-details.html">Event</a></li>
+                <li><a href="/departmentpage/about-dep.html">About</a></li>
+                <li><a href="/student-clubpage/clubs.html">Clubs</a></li>
+                <li><a href="/campuspage/campus-map.html">Campus</a></li>
+                <li><a href="/resultpages/result.html">Table</a></li>
+                <li><a href="/mediaframes/media.html">Media</a></li>
+            </ul>
+        </div>
+            <div class="about-event">
+                    <div class="events">
+                    <button class="annual" onclick="changeapage('Annual')">Annual</button>
+                    <button class="sports" onclick="changeapage('Sports')">Sports</button>
+                    <button class="cultural" onclick="changeapage('Cultural')">Cultural</button>
+                    </div>
+            <strong>
+                <h1 class="eventsna">Cultural Event</h1>
+            </strong>
+            <div class="in-one">
+            <img src="/images/event.jpeg"width="500px" height="400px">
+            <ul>
+                <li>
+                    <h2><mark>The wait is over !!! It is back again</mark>
+                </li>
+                </h2>
+                <li>
+                    <em>Welcome to somaiya one of the biggest event it is the one and only --Symphony<br>Lets come together and enjoy the event .The singer is all's favouite the one and only<br>THE ROCKSTAR:- <abbr title="Javel Ali is one of the famous singer of this generation">JAVED ALI</abbr> </em>
+
+                </li><mark>Important the event begins from 9<sup>th</sup>Feb To 11<sup>th</sup>Feb</sup></mark> 
+                <li><small> Event will take place in KJ Somaiya Ground</small></li>
+                <li>Symphony Version :SP<sub>4</sub></li>
+                <li>Welcome All SUE Students</li>
+
+                </div>
+                <div class="booking">
+                <H1>Booked your seat for Symphony</H1>
+                <button class="Booked" onclick="availableseat()">Booked Seat</button>
+                <p>
+                    Seats Avaiable:-<span id="seatcount">100</span>
+                </p>
+                <h1 id="message"></h1>
+                </div>
+                </div>
+            </ul>
+            </div>
+            </div>
+        </header>
+        <footer>
+            <div class="copywrite">
+                <p>© 2026 KJ Somaiya College of Engineering. All rights reserved</p>
+            </div>
+        </footer>
+        <script src="event.js"></script>
+        <script src="redirecr.js"></script>
+    </body>
+
+    </html>

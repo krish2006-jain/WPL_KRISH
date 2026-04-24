@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<script>
+
+function loginUser(){
+
+let email=document.getElementById("email").value;
+let password=document.getElementById("password").value;
+
+let emailPattern=/^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+document.getElementById("error").innerHTML="";
+
+if(email==""){
+document.getElementById("error").innerHTML="Email is required";
+return false;
+}
+
+if(!email.match(emailPattern)){
+document.getElementById("error").innerHTML="Enter valid email";
+return false;
+}
+
+if(password==""){
+document.getElementById("error").innerHTML="Password is required";
+return false;
+}
+
+if(password.length<6){
+document.getElementById("error").innerHTML="Password must be at least 6 characters";
+return false;
+}
+
+window.location.href="../homepage/index.html";
+
+return false;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+<div class="formbhaar">
+
+<h1>Welcome to Somaiya</h1>
+
+<form id="login" onsubmit="return loginUser()">
+
+<h3>Login Page</h3>
+
+<input type="email" id="email" placeholder="Enter your email"><br><br>
+
+<input type="password" id="password" placeholder="Enter your password">
+
+<p id="error" class="error"></p>
+
+<button type="submit">Sign In</button>
+
+</form>
+
+</div>
+</div>
+
+</body>
+</html>

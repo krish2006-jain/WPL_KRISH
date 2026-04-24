@@ -1,0 +1,21 @@
+.continer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    flex: 1;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+@media(max-width :768px){
+    body{
+        color: azure;
+        background-color: blueviolet;
+        font-size: medium;
+    }
+}

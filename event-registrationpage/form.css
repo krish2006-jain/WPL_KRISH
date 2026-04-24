@@ -1,0 +1,125 @@
+*{
+    margin:0px;
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  text-shadow:
+    1px 1px 1px rgba(0,0,0,0.08),
+    2px 2px 4px rgba(109, 32, 172, 0.25);
+}
+html ,body{
+    height: 100%;
+}
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    flex: 1;
+}
+.dash{
+    margin: 2px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #27124f;
+}
+#logo{
+    width: 200px;
+    margin-right: 10px;
+}
+.dashboard ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 120px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dashboard ul a{
+    text-decoration: none;
+      color: #4b1d95;
+  font-size: 18px;
+}
+.dashboard ul a:hover {
+  text-decoration: underline;
+}
+.copywrite{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px;
+    
+}
+.form-fill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    background-color: whitesmoke;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 500px;
+}
+
+
+label {
+    font-weight: bold;
+    color: #241616;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select{
+    width: 100%;
+    border-radius: 2px;
+
+}
+input :focus{
+    background-color: red;
+}
+#submit{
+    background-color: blue;
+    color: white;border-radius: 8px;
+    height: 30px;
+    width: 80px;
+}
+#sumbit:hover{
+        transform: scale(1.1);
+        background: lightblue;
+}
+#reset{
+    background-color: blue;
+    color: white;border-radius: 8px;
+    height: 30px;
+    width: 80px;
+}
+.thank-you{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    font-size: 20px;
+    gap: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

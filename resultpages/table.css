@@ -1,0 +1,101 @@
+*{
+    margin:0px;
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  text-shadow:
+    1px 1px 1px rgba(0,0,0,0.08),
+    2px 2px 4px rgba(109, 32, 172, 0.25);
+}
+html ,body{
+    height: 100%;
+}
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    flex: 1;
+}
+.dash{
+    margin: 2px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #27124f;
+}
+#logo{
+    width: 200px;
+    margin-right: 10px;
+}
+.dashboard ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 120px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dashboard ul a{
+    text-decoration: none;
+      color: #4b1d95;
+  font-size: 18px;
+}
+.dashboard ul a:hover {
+  text-decoration: underline;
+}
+.copywrite{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.table-creation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+table{
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    height: 80%;
+    border-collapse:separate;
+}
+caption{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b1d95;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+thead{
+ background-color: #333;
+ color: rgb(169, 118, 118);
+}
+tfoot{
+    background-color: #333;
+    color: rgb(169, 118, 118);
+}
+tbody{
+    background-color: #dedcdc;
+    color: rgb(91, 38, 47);
+}
+/* tbody tr:hover{
+    background-color: #9d9d9d;
+}

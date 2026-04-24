@@ -1,0 +1,109 @@
+*{
+    margin:0px;
+    padding: 2px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+html ,body{
+    height: 100%;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    flex: 1;
+}
+
+.dash{
+    margin: 2px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #27124f;
+}
+
+#logo{
+    width: 200px;
+    margin-right: 10px;
+}
+
+
+.dashboard {
+    background: #f4f4f4;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* hamburger hidden on desktop */
+.hamburger {
+    display: none;
+    font-size: 32px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* desktop menu */
+.dashboard ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 120px;
+    padding: 10px;
+}
+
+.dashboard ul a{
+    text-decoration: none;
+    color: #4b1d95;
+    font-size: 18px;
+}
+
+.dashboard ul a:hover {
+    text-decoration: underline;
+}
+
+.copywrite{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video, iframe, audio{
+    margin: 10px auto;
+}
+
+@media (max-width: 600px) {
+
+
+    .hamburger {
+        display: block;
+    }
+
+    .dashboard ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background: #f4f4f4;
+        padding: 10px;
+    }
+
+
+    #menu-toggle:checked + .hamburger + ul {
+        display: flex;
+    }
+}

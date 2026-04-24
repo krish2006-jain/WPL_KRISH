@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+<div id="parent">
+  Parent
+  <button id="child">Click</button>
+</div>
+
+<script>
+const parent = document.getElementById("parent");
+const child = document.getElementById("child");
+
+// Bubbling
+parent.addEventListener("click", () => {
+  console.log("Parent - Bubbling");
+});
+
+child.addEventListener("click", () => {
+  console.log("Child - Bubbling");
+});
+
+// Capturing
+parent.addEventListener("click", () => {
+  console.log("Parent - Capturing");
+}, true);
+
+child.addEventListener("click", () => {
+  console.log("Child - Capturing");
+}, true);
+</script>
+
+</body>
+</html>

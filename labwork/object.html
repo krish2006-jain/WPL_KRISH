@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function Carno(no){
+            with(this){
+                Carno=no;
+            }
+        }
+        function Car(name,owner){
+            this.name=name;
+            this.owner=owner;
+            this.Carno=Carno;
+        }
+    </script>   
+</head>
+<body>
+    <script type="text/javascript">
+        var Mycar=new Car("BMW","Krish");
+        Mycar.Carno(2908);
+
+        document.write("Car name:-"+Mycar.name+"<br>");
+        document.write("Car owner:"+Mycar.owner+"<br>");
+        document.write("Car no : MH"+Mycar.Carno+"<br>");
+       
+    </script>
+</body>
+</html>

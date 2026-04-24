@@ -1,0 +1,112 @@
+*{
+    margin:0px;
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  text-shadow:
+    1px 1px 1px rgba(0,0,0,0.08),
+    2px 2px 4px rgba(109, 32, 172, 0.25);
+}
+html ,body{
+    height: 100%;
+}
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    flex: 1;
+}
+.dash{
+    margin: 2px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #27124f;
+}
+#logo{
+    width: 200px;
+    margin-right: 10px;
+}
+.dashboard ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 120px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dashboard ul a{
+    text-decoration: none;
+      color: #4b1d95;
+  font-size: 18px;
+}
+.dashboard ul a:hover {
+  text-decoration: underline;
+}
+.copywrite{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+        
+        .Vision{
+            color: rgb(174, 47, 174);
+            background-color:rgb(255, 255, 255);
+            
+            width: 360px;
+            line-height: 30px;
+        }
+        .Mission{
+            color: red;
+            background-color: rgb(255, 255, 255);
+            width: 360px;
+            line-height: 30px;
+        }
+        .Facilites{
+            color: rgb(6, 128, 87);
+            background-color: rgb(255, 255, 255);
+
+            width: 360px;
+            line-height: 30px;
+        }
+.all-session{
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: center;
+    flex-direction: row;
+}
+
+blockquote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 100px;
+    background-color: rgb(255, 255, 255);
+}
+.all-in-one{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.t{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 240px;
+    
+}
